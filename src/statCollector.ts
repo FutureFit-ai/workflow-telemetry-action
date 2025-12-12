@@ -375,6 +375,13 @@ async function getLineGraph(options: LineGraphOptions): Promise<GraphResponse> {
         xAxes: [
           {
             type: 'time',
+            time: {
+              displayFormats: {
+                second: 'HH:mm:ss',
+                minute: 'HH:mm:ss',
+                hour: 'HH:mm'
+              }
+            },
             scaleLabel: {
               display: true,
               labelString: 'Time',
@@ -408,8 +415,8 @@ async function getLineGraph(options: LineGraphOptions): Promise<GraphResponse> {
   }
 
   const payload = {
-    width: 1000,
-    height: 500,
+    width: 800,
+    height: 400,
     chart: chartConfig
   }
 
@@ -452,6 +459,13 @@ async function getStackedAreaGraph(
         xAxes: [
           {
             type: 'time',
+            time: {
+              displayFormats: {
+                second: 'HH:mm:ss',
+                minute: 'HH:mm:ss',
+                hour: 'HH:mm'
+              }
+            },
             scaleLabel: {
               display: true,
               labelString: 'Time',
@@ -486,8 +500,8 @@ async function getStackedAreaGraph(
   }
 
   const payload = {
-    width: 1000,
-    height: 500,
+    width: 800,
+    height: 400,
     chart: chartConfig
   }
 

@@ -45216,6 +45216,13 @@ function getLineGraph(options) {
                     xAxes: [
                         {
                             type: 'time',
+                            time: {
+                                displayFormats: {
+                                    second: 'HH:mm:ss',
+                                    minute: 'HH:mm:ss',
+                                    hour: 'HH:mm'
+                                }
+                            },
                             scaleLabel: {
                                 display: true,
                                 labelString: 'Time',
@@ -45248,8 +45255,8 @@ function getLineGraph(options) {
             }
         };
         const payload = {
-            width: 1000,
-            height: 500,
+            width: 800,
+            height: 400,
             chart: chartConfig
         };
         let response = null;
@@ -45289,6 +45296,13 @@ function getStackedAreaGraph(options) {
                     xAxes: [
                         {
                             type: 'time',
+                            time: {
+                                displayFormats: {
+                                    second: 'HH:mm:ss',
+                                    minute: 'HH:mm:ss',
+                                    hour: 'HH:mm'
+                                }
+                            },
                             scaleLabel: {
                                 display: true,
                                 labelString: 'Time',
@@ -45322,8 +45336,8 @@ function getStackedAreaGraph(options) {
             }
         };
         const payload = {
-            width: 1000,
-            height: 500,
+            width: 800,
+            height: 400,
             chart: chartConfig
         };
         let response = null;
